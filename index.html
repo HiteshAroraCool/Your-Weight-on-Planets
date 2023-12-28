@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Your existing meta tags, title, and other resources -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Planet</title>
+        <link rel="stylesheet" href="style.css">
+        <script defer src="app.js"></script>
+        <!-- Include the CodePen animation resources -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    </head>
+<body>
+    <section>
+        <h1>Choose A Planet</h1>
+
+        <select id="planet">
+            <option value="mercury">Mercury</option>
+            <option value="venus">Venus</option>
+            <option value="earth" selected>Earth</option>
+            <option value="mars">Mars</option>
+            <option value="jupiter">Jupiter</option>
+            <option value="saturn">Saturn</option>
+            <option value="uranus">Uranus</option>
+            <option value="neptune">Neptune</option>
+            <option value="pluto">Pluto</option>
+        </select>
+        <br>
+        <input type="number" id="weight" placeholder="Enter Weight"><br>
+        <button type="submit" onclick="calculateWeight()">Calculate</button>
+        <p id="result"></p>
+    </section>
+
+    <section class="hidden">
+        <img width="100" height="100" src="https://img.icons8.com/bubbles/100/earth-planet.png" alt="earth-planet"/>
+        <img width="100" height="100" src="https://img.icons8.com/matisse/100/000000/venus-planet.png" alt="venus-planet"/>
+    </section>
+<p>Remenber to add this https://codepen.io/juliangarnier/pen/krNqZO</p>
+</body>
+</html>
