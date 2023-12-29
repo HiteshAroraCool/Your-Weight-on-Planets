@@ -1,5 +1,6 @@
 const weightInput = document.getElementById("weight");
 const planetSelect = document.getElementById('planet');
+const output = document.getElementById("result");
 
 function calculateWeight() {
     const weight = parseFloat(weightInput.value);
@@ -8,6 +9,7 @@ function calculateWeight() {
 
     if (gravity && !isNaN(weight)) {
         const weightOnPlanet = weight * gravity;
+        output.innerHTML = weightOnPlanet.value;
         console.log(`Your weight on ${planet.charAt(0).toUpperCase() + planet.slice(1)} would be ${weightOnPlanet.toFixed(2)}`);
     } else {
         console.log('Invalid input. Please enter a valid weight and select a planet.');
