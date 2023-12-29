@@ -1,13 +1,6 @@
 const weightInput = document.getElementById("weight");
 const planetSelect = document.getElementById('planet');
 
-weightInput.addEventListener("keyup", (event) => {
-    if (event.key === "Enter") {
-        event.preventDefault();
-        calculateWeight();
-    }
-});
-
 function calculateWeight() {
     const weight = parseFloat(weightInput.value);
     const planet = planetSelect.options[planetSelect.selectedIndex].value;
@@ -35,6 +28,11 @@ function getGravity(planet) {
 
     return planetData[planet];
 }
+
+weightInput.addEventListener("click", calculateWeight)
+
+
+// this code is scroll animate
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry)=> {
