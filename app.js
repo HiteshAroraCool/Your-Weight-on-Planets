@@ -25,7 +25,8 @@ function getGravity(planet) {
         jupiter: 2.64,
         saturn: 1.17,
         uranus: 0.92,
-        neptune: 1.27
+        neptune: 1.27,
+        pluto: 0.06
     };
 
     return planetData[planet];
