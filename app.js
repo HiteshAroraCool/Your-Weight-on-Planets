@@ -6,6 +6,7 @@ function calculateWeight() {
     const weight = parseFloat(weightInput.value);
     const planet = planetSelect.options[planetSelect.selectedIndex].value;
     const gravity = getGravity(planet);
+    console.log(planet, gravity);
 
     if (gravity && !isNaN(weight)) {
         const weightOnPlanet = weight * gravity;
