@@ -37,7 +37,7 @@ This is a simple weight calculator that determines your weight on different plan
 
 ## Preview
 
-![Weight Calculator](planets)
+![Weight Calculator](planets.gif)
 
 ## Credits
 
