@@ -9,10 +9,10 @@ function calculateWeight() {
 
     if (gravity && !isNaN(weight)) {
         const weightOnPlanet = weight * gravity;
-        output.innerHTML = weightOnPlanet.value;
-        console.log(`Your weight on ${planet.charAt(0).toUpperCase() + planet.slice(1)} would be ${weightOnPlanet.toFixed(2)}`);
+
+        output.innerHTML = `Your weight on ${planet.charAt(0).toUpperCase() + planet.slice(1)} would be ${weightOnPlanet.toFixed(2)}`
     } else {
-        console.log('Invalid input. Please enter a valid weight and select a planet.');
+        output.innerHTML = `Invalid input. Please enter a valid weight and select a planet.`;
     }
 }
 
@@ -30,9 +30,9 @@ function getGravity(planet) {
 
     return planetData[planet];
 }
-
 weightInput.addEventListener("click", calculateWeight)
-
+weightInput.addEventListener("input", calculateWeight); // Use input event for real-time updates
+planetSelect.addEventListener("change", calculateWeight); // Listen for planet selection changes
 
 // this code is scroll animate
 
